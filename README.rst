@@ -12,7 +12,7 @@ Usage:
     $ pip3 install -U boto3
     $ ./aws-cost-and-usage-report.py --days=7 >> results.tsv
 
-The ``results.tsv`` file can be opened in your favorite spreadsheet application. Its contents look like:
+The ``results.csv`` file can be opened in your favorite spreadsheet application. Its contents look like:
 
 ========== ============= ====================================== ====== ==== =========
 TimeSpan   LinkedAccount Service                                Amount Unit Estimated
@@ -28,6 +28,9 @@ TimeSpan   LinkedAccount Service                                Amount Unit Esti
 
 
 need add follow permission to the account
+
+
+
 {
     "Version": "2012-10-17",
     "Statement": [
