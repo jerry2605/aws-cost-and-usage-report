@@ -25,3 +25,20 @@ TimeSpan   LinkedAccount Service                                Amount Unit Esti
 2017-11-27 001111111111  Amazon Elastic Compute Cloud - Compute 411.25 USD  True
 2017-11-27 001111111111  Amazon Elastic Load Balancing          16.201 USD  True
 ========== ============= ====================================== ====== ==== =========
+
+
+need add follow permission to the account
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ce:*",
+                "aws-portal:ViewUsage",
+                "aws-portal:ViewBilling"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
